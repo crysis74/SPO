@@ -10,3 +10,11 @@
 			r> =
 		then 
 ;
+: prime-allot
+    prime
+    cell% allot
+    dup
+    rot
+    swap
+    !
+;
