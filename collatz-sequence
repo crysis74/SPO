@@ -1,0 +1,22 @@
+: collatz-sequence
+	dup 0 <=
+	if
+		drop ." need >0" cr
+	else
+		dup . cr
+		repeat
+			dup 2 % not
+			if
+				2 / 
+			else
+				3 * 1 +
+			then
+				dup dup . cr 1 =
+					if
+						1
+					else
+						0
+					then
+		until
+	then
+;	
