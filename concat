@@ -1,0 +1,5 @@
+: concat
+	2dup count swap count + 1 + heap-alloc -rot swap rot
+	dup >r dup rot dup count >r
+	string-copy r> + swap string-copy r> 
+; 
